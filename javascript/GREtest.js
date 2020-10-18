@@ -23,19 +23,21 @@ const generateTest = (data) => {
             quest.textContent = ''
             createQuestions(data, 1)
             createAnswers(data, 1)
-            let g2 = document.querySelector('#hide').value;
-            localStorage.setItem('secondAnswer', g2)
         }
         if(count === 2) {
+            let g2 = document.querySelector('#hide').value;
+            localStorage.setItem('secondAnswer', g2)
+            document.querySelector('#hide').value = ''
             document.querySelector('#question-number').textContent = "Q3)"
             quest.textContent = ''
             createQuestions(data, 2)
             createAnswers(data, 2)
-            let g3 = document.querySelector('#hide').value;
-            localStorage.setItem('thirdAnswer', g3)
         }
 
         if(count === 3) {
+            let g3 = document.querySelector('#hide').value;
+            localStorage.setItem('thirdAnswer', g3)
+            document.querySelector('#hide').value = ''
             document.querySelector('#question-number').textContent = "Q4)"
             quest.textContent = ''
             createQuestions(data, 3)
@@ -43,6 +45,9 @@ const generateTest = (data) => {
         }
 
         if(count === 4) {
+            let g4 = document.querySelector('#hide').value;
+            localStorage.setItem('fourthAnswer', g4)
+            document.querySelector('#hide').value = ''
             document.querySelector('#question-number').textContent = "Q5)"
             quest.textContent = ''
             createQuestions(data, 4)
@@ -50,8 +55,9 @@ const generateTest = (data) => {
         }
 
         if(count > data.length - 1) {
+            let g5 = document.querySelector('#hide').value;
+            localStorage.setItem('fifthAnswer', g5)
             document.querySelector('#next').textContent = "Finish"
-
         }
 
     })
