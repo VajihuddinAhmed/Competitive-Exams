@@ -58,6 +58,7 @@ const generateTest = (data) => {
             let g5 = document.querySelector('#hide').value;
             localStorage.setItem('fifthAnswer', g5)
             document.querySelector('#next').textContent = "Finish"
+            location.assign(`/html/Thanks.html`)
         }
 
     })

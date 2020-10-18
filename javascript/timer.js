@@ -20,5 +20,6 @@ let x = setInterval(function() {
   if (timeleft < 0) {
     clearInterval(x);
     document.getElementById("time-div").innerHTML = "Time out please close the tab";
+    document.getElementById("next").disabled = true;
   }
 }, 1000);
