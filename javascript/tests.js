@@ -27,6 +27,10 @@ const modal = document.querySelector(".modal");
         spanName.textContent = "GRE"
         examName.appendChild(spanName);
         modal.classList.toggle("show-modal");
+        const examStart = document.querySelector('#start')
+        examStart.addEventListener('click', () => {
+            location.assign('/html/GREtest.html')
+        })
     });
     trigger1.addEventListener("click", () => {
         if(examName) {
@@ -69,7 +73,7 @@ const modal = document.querySelector(".modal");
             examName.innerHTML = ''
         }
         const spanName = document.createElement('p')
-        spanName.textContent = "IAS"
+        spanName.textContent = "DELF"
         examName.appendChild(spanName);
         modal.classList.toggle("show-modal");
     });
