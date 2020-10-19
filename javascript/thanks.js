@@ -15,6 +15,7 @@ const downloadToFile = (content, filename, contentType) => {
   
   document.querySelector('#endBtn').addEventListener('click', () => {
    const studentData = {
+        Exam: localStorage.getItem('Exam'),
         Email: localStorage.getItem('Email:'),
         Code: localStorage.getItem('Code:'),
         Name: localStorage.getItem('Name:'),
@@ -28,7 +29,7 @@ const downloadToFile = (content, filename, contentType) => {
 
    let xyz = JSON.stringify(studentData)
     
-    downloadToFile(xyz, 'Answers.txt', 'text/plain');
+    downloadToFile(xyz, 'Answers.json', 'text/json');
     document.querySelector('#closeTab').textContent = 'Please close the tab.'
     document.getElementById("endBtn").disabled = true;
   });

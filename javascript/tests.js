@@ -29,6 +29,7 @@ const modal = document.querySelector(".modal");
         modal.classList.toggle("show-modal");
         const examStart = document.querySelector('#start')
         examStart.addEventListener('click', () => {
+            localStorage.setItem('Exam', "GRE")
             location.assign('/html/GREtest.html')
         })
     });
@@ -40,6 +41,11 @@ const modal = document.querySelector(".modal");
         spanName.textContent = "GMAT"
         examName.appendChild(spanName);
         modal.classList.toggle("show-modal");
+        const examStart = document.querySelector('#start')
+        examStart.addEventListener('click', () => {
+            localStorage.setItem('Exam', "GMAT")
+            location.assign('/html/GMATtest.html')
+        })
     });
     trigger2.addEventListener("click", () => {
         if(examName) {
@@ -49,6 +55,11 @@ const modal = document.querySelector(".modal");
         spanName.textContent = "IELTS"
         examName.appendChild(spanName);
         modal.classList.toggle("show-modal");
+        const examStart = document.querySelector('#start')
+        examStart.addEventListener('click', () => {
+            localStorage.setItem('Exam', "IELTS")
+            location.assign('/html/IELTStest.html')
+        })
     });
     trigger3.addEventListener("click", () => {
         if(examName) {
@@ -58,6 +69,11 @@ const modal = document.querySelector(".modal");
         spanName.textContent = "TOEFL"
         examName.appendChild(spanName);
         modal.classList.toggle("show-modal");
+        const examStart = document.querySelector('#start')
+        examStart.addEventListener('click', () => {
+            localStorage.setItem('Exam', "TOEFL")
+            location.assign('/html/TOEFLtest.html')
+        })
     });
     trigger4.addEventListener("click", () => {
         if(examName) {
@@ -67,6 +83,11 @@ const modal = document.querySelector(".modal");
         spanName.textContent = "PTE"
         examName.appendChild(spanName);
         modal.classList.toggle("show-modal");
+        const examStart = document.querySelector('#start')
+        examStart.addEventListener('click', () => {
+            localStorage.setItem('Exam', "PTE")
+            location.assign('/html/PTEtest.html')
+        })
     });
     trigger5.addEventListener("click", () => {
         if(examName) {
@@ -76,6 +97,11 @@ const modal = document.querySelector(".modal");
         spanName.textContent = "DELF"
         examName.appendChild(spanName);
         modal.classList.toggle("show-modal");
+        const examStart = document.querySelector('#start')
+        examStart.addEventListener('click', () => {
+            localStorage.setItem('Exam', "DELF")
+            location.assign('/html/DELFtest.html')
+        })
     });
     closeButton.addEventListener("click", toggleModal);
     window.addEventListener("click", windowOnClick);
