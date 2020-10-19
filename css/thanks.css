@@ -16,16 +16,20 @@ header {
 
 .empty-div {
     width: 5rem;
+    height: 8rem;
 }
 
 #logo {
     height: 5rem;
     width: 8rem;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
+    border: 1px solid black; 
+    margin-top: 1rem;
 }
 
 .main-heading {
     color: purple;
-    padding-top: 1rem;
+    padding-top: 2rem;
 }
 
 main {

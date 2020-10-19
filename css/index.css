@@ -21,11 +21,101 @@ header {
 #logo {
     height: 5rem;
     width: 8rem;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
+    border: 1px solid black; 
+    margin-top: 1rem;
 }
 
 .main-heading {
     color: purple;
+    margin-top: 2rem;
+}
+
+.login {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    height: 3.5rem;
+    width: 7rem;
+    background-color: #f3a725;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 1rem;    
+    font-weight: bold;
+    color: purple;
+}
+
+.login:hover {
+    background-color: aqua;
+}
+
+main {
+    height: 95vh;
+}
+
+.main-div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.head-intro {
+    font-size: 4rem;
+    padding-top: 7rem;
+    color: purple;
+}
+
+.para-intro {
+    font-size: 2rem;
+    padding-top: 3rem;
+    padding-left: 5rem;
+}
+
+.main-image {
+    margin-top: 4rem;
+}
+
+#second-intro {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2rem;
+}
+
+.images-logos {
+    height: 15rem;
+    width: 15rem;
+    padding-left: 1.2rem;
+}
+
+.box {
+    margin-top: 3rem;
+    transition: all 1s;
+}
+
+.box:hover {
+    border: solid 1px black;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.5);
+    transform: scale(1.2);  
+}
+
+.part-intro {
+    text-align: center;
+    font-size: 1.4rem;
+    color: purple;
+}
+
+.para-introduction {
+    text-align: center;
     padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 footer {

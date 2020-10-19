@@ -1,3 +1,7 @@
+window.location.hash="no-back-button";
+window.location.hash="Again-No-back-button";//again because google chrome don't insert first hash into history
+window.onhashchange=function(){window.location.hash="no-back-button";}
+
 const modal = document.querySelector(".modal");
 // const GMATmodal = document.querySelector(".GMATmodal");
     const trigger = document.querySelector("#GREtrigger");
@@ -31,6 +35,7 @@ const modal = document.querySelector(".modal");
         examStart.addEventListener('click', () => {
             localStorage.setItem('Exam', "GRE")
             location.assign('/html/GREtest.html')
+            
         })
     });
     trigger1.addEventListener("click", () => {

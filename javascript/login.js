@@ -1,6 +1,3 @@
-// let userdata = (key, value) => {
-//     localStorage.setItem(key, value)
-// }
 const formSubmit = document.querySelector("#submit")
 
 formSubmit.addEventListener('submit', (e) => {
@@ -9,8 +6,6 @@ formSubmit.addEventListener('submit', (e) => {
     const Id = e.target.elements.Id.value.trim()
     const email = e.target.elements.email.value.trim()
     const code = e.target.elements.code.value.trim()
-
-    // userdata('Name:', userName)
 
     localStorage.setItem('Name:', JSON.stringify(userName))
     localStorage.setItem('ID:', JSON.stringify(Id))
