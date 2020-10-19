@@ -1,0 +1,175 @@
+* {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+} 
+
+header {
+    background-color: #f3a725;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.empty-div {
+    width: 5rem;
+}
+
+#logo {
+    height: 5rem;
+    width: 8rem;
+}
+
+.main-heading {
+    color: purple;
+    padding-top: 1rem;
+}
+
+main {
+    background-color: whitesmoke;
+    height: 85vh;
+}
+
+.main-header {
+    color: grey;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+#main-lists {
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    margin: 3rem 0;
+    
+}
+
+.main-exam__list {
+    height: 9rem;
+    width: 18rem;
+    background-color: white;
+    /* padding-top: 1rem;
+    padding-left: 1.5rem; */
+    border-radius: 5px;
+    box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.5);
+    transition: all 1s;
+}
+
+.main-exam__list:hover {
+    transform: scale(1.2);
+}
+
+.main-exam__list h2 {
+    color: blue;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    height: 9rem;
+}
+
+.main-exam__list a {
+    text-decoration: none;
+    color: blue;
+}
+
+
+footer {
+    background-color: #f3a725;
+    display: flex;
+    justify-content: space-around;
+    /* height: 18%; */
+}
+
+.footer-items {
+    padding: 2.5rem;
+}
+
+.footer-items__1 {
+    padding-top: 10px;
+}
+
+.list-items {
+    list-style: none;
+    color: black;
+}
+
+.modal, .GMATmodal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1rem 1.5rem;
+    width: 24rem;
+    border-radius: 0.5rem;
+}
+.close-button {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: lightgray;
+}
+.close-button:hover {
+    background-color: darkgray;
+}
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-styles {
+    height: 20rem;
+    width: 30rem;
+}
+
+.modal-heading {
+    margin: 30px 0;
+    padding-left: 7rem;
+}
+
+.instructions {
+    margin-bottom: 20px;
+}
+
+.start-button {
+    margin-top: 2rem;
+    margin-left: 8rem;
+    height: 3.5rem;
+    width: 7rem;
+    background-color: #f3a725;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 1rem;    
+    font-weight: bold;
+}
+
+.start-button:hover {
+    background-color: aqua;
+}
