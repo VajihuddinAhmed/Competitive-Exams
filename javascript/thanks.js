@@ -2,6 +2,8 @@ window.location.hash="no-back-button";
 window.location.hash="Again-No-back-button";//again because google chrome don't insert first hash into history
 window.onhashchange=function(){window.location.hash="no-back-button";}
 
+const postUrl = 'https://my-json-server.typicode.com/VajihuddinAhmed/Job_Board_API/postjobs';
+
 const downloadToFile = (content, filename, contentType) => {
     const a = document.createElement('a');
     const file = new Blob([content], {type: contentType});
@@ -26,6 +28,14 @@ const downloadToFile = (content, filename, contentType) => {
         fourthAnswer: localStorage.getItem('fourthAnswer'),
         fifthAnswer: localStorage.getItem('fifthAnswer')
    }
+
+   fetch(postUrl, {
+    method: 'POST',
+    body: JSON.stringify(studentData),
+    headers: {"Content-type": "application/json; charset=UTF-8"}
+    }).then(response => response.json()) 
+    .then(json => console.log(json))
+    .catch(err => console.log(err))
 
    let xyz = JSON.stringify(studentData)
     
