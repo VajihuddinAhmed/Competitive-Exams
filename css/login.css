@@ -89,20 +89,57 @@ main {
 
 footer {
     background-color: #f3a725;
+}
+
+.main-footer {
     display: flex;
-    justify-content: space-around;
-    /* height: 18%; */
+    justify-content: space-evenly;
 }
 
-.footer-items {
-    padding: 2.5rem;
-}
-
-.footer-items__1 {
-    padding-top: 10px;
-}
-
-.list-items {
-    list-style: none;
+.text-heading {
     color: black;
+    font-weight: bold;
+    font-size: 1.7rem;
+    padding: 3rem 0;
 }
+
+.links {
+    color: black;
+    padding-bottom: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.links:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.lnkd-logo {
+    height: 3rem;
+    margin-left: 1rem;
+}
+
+.copy-line {
+    color: black;
+    text-align: center;
+    margin-top: 2rem; 
+    padding-bottom: 2rem;
+}
+
+.location-logo {
+    height: 1.8rem;
+}
+
+.lctn-logo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tele {
+    margin-right: 5rem;
+}
+
+.tele1 {
+    margin-right: 1rem;
+}
+

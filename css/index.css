@@ -3,10 +3,6 @@
     margin: 0;
 }
 
-body {
-    height: 100vh;
-} 
-
 header {
     background-color: #f3a725;
     display: flex;
@@ -49,13 +45,9 @@ header {
     background-color: aqua;
 }
 
-main {
-    height: 95vh;
-}
-
 .main-div {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .intro {
@@ -65,25 +57,26 @@ main {
 }
 
 .head-intro {
-    font-size: 4rem;
+    font-size: 2.5rem;
     padding-top: 7rem;
-    color: purple;
+    color: rgb(181, 62, 236);
 }
 
 .para-intro {
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding-top: 3rem;
-    padding-left: 5rem;
 }
 
 .main-image {
-    margin-top: 4rem;
+    margin-top: 1rem;
+    margin-left: 8rem;
 }
 
 #second-intro {
     display: flex;
     justify-content: space-evenly;
-    padding-top: 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 4rem;
 }
 
 .images-logos {
@@ -118,22 +111,98 @@ main {
     padding-right: 1rem;
 }
 
+.third-main__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 0;
+    background-color: lightskyblue;
+}
+
+.subscribe-title {
+    font-size: 2rem;
+    padding-bottom: 1.1rem;
+}
+
+.title-info {
+    padding-bottom: 2rem;
+    color: black;
+}
+
+.input-type {
+    height: 50px;
+    width: 500px;
+    border-radius: 5px;
+    border: none;
+}
+
+::placeholder {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.subs-button {
+    height: 50px;
+    background-color: red;
+    color: whitesmoke;
+    border-radius: 5px;
+    border: none;
+    padding: 0 2rem;
+    font-size: 1rem;
+}
+
 footer {
     background-color: #f3a725;
+}
+
+.main-footer {
     display: flex;
-    justify-content: space-around;
-    /* height: 18%; */
+    justify-content: space-evenly;
 }
 
-.footer-items {
-    padding: 2.5rem;
-}
-
-.footer-items__1 {
-    padding-top: 10px;
-}
-
-.list-items {
-    list-style: none;
+.text-heading {
     color: black;
+    font-weight: bold;
+    font-size: 1.7rem;
+    padding: 3rem 0;
+}
+
+.links {
+    color: black;
+    padding-bottom: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.links:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.lnkd-logo {
+    height: 3rem;
+    margin-left: 1rem;
+}
+
+.copy-line {
+    color: black;
+    text-align: center;
+    margin-top: 2rem; 
+    padding-bottom: 2rem;
+}
+
+.location-logo {
+    height: 1.8rem;
+}
+
+.lctn-logo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tele {
+    margin-right: 5rem;
+}
+
+.tele1 {
+    margin-right: 1rem;
 }
